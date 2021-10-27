@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Axios from "./Axios/Axios";
 import FragComp from "./Fragment/FragComp";
 import News from "./News/News";
 import Index from "./RegPureComp/Index";
@@ -17,7 +18,11 @@ class Import extends Component {
                 
                 */}
 
-                <News/>
+
+                {/* <News /> */}
+
+
+
             </div>
         )
     }
