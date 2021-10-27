@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { newsTags } from '../PureJS' //No need to provide index.js because of index.js
+import { newsTags } from '../Utilites' //No need to provide index.js because of index.js
 
 class Header extends Component {
 
