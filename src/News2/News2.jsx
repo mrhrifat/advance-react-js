@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import serverNews, { newsCategory, country } from './Utilites/Index'
+import serverNews, { newsCategory, country } from './Utilities/Index'
 import Header from './Components/Header'
 import Loading from './Components/Loading'
 import NewsList from './Components/NewsList'
