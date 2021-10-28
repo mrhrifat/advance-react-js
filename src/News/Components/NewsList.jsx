@@ -7,10 +7,10 @@ const dateString = dateTimeString => {
 const NewsCard = ({ item }) => {
     return (
         <div className='card mb-4'>
-            {item.urlToIamge && (
+            {item.urlToImage && (
                 <img
                     className='card-img-top'
-                    src={item.urlToIamge}
+                    src={item.urlToImage}
                     alt={item.title}
 
                 />
@@ -43,7 +43,7 @@ const NewsCard = ({ item }) => {
 
             <div className="card-footer d-flex align-item-center justify-content-between">
                 <small>
-                    {dateString(item.publishedAt)} Ago
+                    Published at {dateString(item.publishedAt)}
                 </small>
 
                 <div
