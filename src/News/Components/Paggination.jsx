@@ -6,6 +6,7 @@ class Paggination extends Component {
     }
     render() {
         const { isEditable } = this.state
+        const { handleNext } = this.props
         return (
             <div className='my-4 d-flex align-items-center justify-content-between'>
                 <button className="btn btn-success">Prev</button>
@@ -32,7 +33,10 @@ class Paggination extends Component {
                         </p>
                     )}
                 </div>
-                <button className="btn btn-success">Next</button>
+                <button
+                    className="btn btn-success"
+                    onClick={handleNext}
+                >Next</button>
             </div>
         )
     }
