@@ -1,8 +1,7 @@
-export const newsTags={
+export const newsCategory={
     technology:'technology',
     science:'science',
-    education:'education',
-    lifestyle:'lifestyle',
+    health:'health',
     business:'business',
     entertainment:'entertainment',
     general:'general',
