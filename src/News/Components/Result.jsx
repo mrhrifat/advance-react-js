@@ -2,19 +2,21 @@ import React, { Component } from 'react'
 
 class Result extends Component {
     render() {
+        const { totalResults, totalPage, page } = this.props
         return (
             <div className='d-flex justify-content-between'>
                 <p
                     className='text-black-50'
                 >
-                    About {1} result found
+                    About {totalResults} result found
                 </p>
                 <br />
                 <p
                     className='text-black-50'
                 >
-                    {1} of {100}
+                    {page} of {totalPage}
                 </p>
+                {console.log(totalPage)}
             </div>
         )
     }
