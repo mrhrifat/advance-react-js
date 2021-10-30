@@ -6,15 +6,35 @@ class Paggination extends Component {
     }
     render() {
         const { isEditable } = this.state
-        const { handleNext } = this.props
+        const { currentPage, totalPage, next, prev, isNext, isPrev, handlePageChange, goToPage } = this.props
         return (
             <div className='my-4 d-flex align-items-center justify-content-between'>
-                <button className="btn btn-success">Prev</button>
+                <button
+                    className="btn btn-success"
+                    disabled={!isPrev}
+                    onClick={() => {
+                        prev()
+                    }}
+                >
+                    Prev
+                </button>
+
                 <div className="flex-grow-1 text-center">
                     {isEditable ? (
                         <input
                             type="number"
-                            value={1}
+                            value={currentPage}
+                            onChange={e => {
+                                handlePageChange(e.target.value)
+                            }}
+                            onKeyPress={e => {
+                                if (e.key === 'Enter') {
+                                    goToPage()
+                                    this.setState({
+                                        isEditable: !this.state.isEditable
+                                    })
+                                }
+                            }}
                         />
                     ) : (
                         <p
@@ -25,19 +45,24 @@ class Paggination extends Component {
                             title='Double tap to jump page'
                             onDoubleClick={() => {
                                 this.setState({
-                                    isEditable: !isEditable
+                                    isEditable: !isEditable,
                                 })
                             }}
                         >
-                            {1} of {100}
+                            {currentPage} of {totalPage}
                         </p>
                     )}
                 </div>
                 <button
                     className="btn btn-success"
-                    onClick={handleNext}
-                >Next</button>
-            </div>
+                    disabled={!isNext}
+                    onClick={() => {
+                        next()
+                    }}
+                >
+                    Next
+                </button>
+            </div >
         )
     }
 }
