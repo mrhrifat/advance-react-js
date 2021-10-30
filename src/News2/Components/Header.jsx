@@ -6,13 +6,17 @@ class Header extends Component {
     state = {
         initialText: ''
     }
+
     handleChange = event => {
         this.setState({
             initialText: event.target.value
         })
     }
+
     handleKeyPress = event => {
-        //TODO: Implement Later
+        if (event.key === 'Enter') {
+            this.props.handleSearch(this.state.initialText)
+        }
     }
 
     render() {
