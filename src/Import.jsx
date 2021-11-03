@@ -4,6 +4,7 @@ import FragComp from "./Fragment/FragComp";
 import LifeCycle from "./LifeCycle/LifeCycle";
 import News from "./News/News";
 import News2 from "./News2/News2";
+import News3 from "./News3/News3";
 import Index from "./RegPureComp/Index";
 import Smart from "./SmartComponent/Smart";
 
@@ -24,8 +25,9 @@ class Import extends Component {
 
                 {/* <News /> */}
 
-                <News2 />
+                {/* <News2 /> */}
 
+                <News3/>
 
 
 
