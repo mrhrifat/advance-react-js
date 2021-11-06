@@ -8,7 +8,9 @@ class Loading extends Component {
                     <strong>Loading...</strong>
                 </p>
                 <div
-                    className='spinner-border text-success' role='status' aria-hidden='true'
+                    className='spinner-border text-success'
+                    role='status'
+                    aria-hidden='true'
                 >
 
                 </div>
