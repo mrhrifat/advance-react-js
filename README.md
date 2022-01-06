@@ -8,5 +8,16 @@ In this repository, we will make an [Application](https://github.com/mrhrifat/wo
 - [More ES6](https://github.com/mrhrifat/development-javascript)
 - [Core ReactJS](https://github.com/mrhrifat/core-react-js)
 
+So, let's start learning.
+
+## Motive
+It will help any future Programmer, who don't know ReactJS & want to learn it. Beside, it will be a good experience to learn with making a real application.
+
+## Agenda 
+- [Fragment](https://github.com/mrhrifat/advance-react-js/tree/master/src/Fragment)
+- [Axios](https://github.com/mrhrifat/advance-react-js/tree/master/src/Axios)
+- [Life Cycle Method](https://github.com/mrhrifat/advance-react-js/tree/master/src/LifeCycle)
+**Note:** This things are not complete yet. Let me know if you need all of them.
+
 
 
